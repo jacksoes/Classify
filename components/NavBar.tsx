@@ -1,12 +1,11 @@
 import Logo from "@/ui/Logo";
 import Search from "@/ui/Search";
 import Profile from "@/ui/Profile";
-import Notifications from "@/ui/Notifications";
 import AddPost from "@/ui/AddPost";
 import LoginButton from "@/ui/LoginButton";
 
 
-const isLoggedin = false;
+const isLoggedin = true;
 
 export function NavBar() {
   return (
@@ -24,7 +23,6 @@ export function NavBar() {
             isLoggedin ?
               <>
                 <AddPost />
-                <Notifications />
                 <Profile />
               </>
               :
